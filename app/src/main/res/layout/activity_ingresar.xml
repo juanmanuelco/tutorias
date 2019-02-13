@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.facci.clase.IngresarActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INgresar producto"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"/>
+    <EditText
+        android:id="@+id/txt_codigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4px"
+        android:hint="Código de barra"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/txt_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del producto"
+        android:layout_margin="4px"
+        android:inputType="textAutoComplete"/>
+
+    <EditText
+        android:id="@+id/txt_precio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Precio del producto"
+        android:layout_margin="4px"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/txt_existencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4px"
+        android:inputType="numberSigned"
+        android:hint="Existencia del producto"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:text="Guardar"
+        android:onClick="guardar"
+        android:layout_height="wrap_content" />
+</LinearLayout>
